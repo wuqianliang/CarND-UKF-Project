@@ -2,7 +2,7 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ## Overview
-This project implemented an Extended Kalman Filter for RADAR and LIDAR sensor data. The Udacity simulator generates noisy RADAR and LIDAR measurements of the position and velocity of an object. This project implemented the Extended Kalman Filter  to fusion those measurements to predict the position and velocity of the object. 
+This project implemented an Unscented Kalman Filter for RADAR and LIDAR sensor data. The Udacity simulator generates noisy RADAR and LIDAR measurements of the position and velocity of an object. This project implemented the Extended Kalman Filter  to fusion those measurements to predict the position and velocity of the object. 
 
 ## Prerequisites
 
@@ -16,10 +16,10 @@ As described in [Udacity seed project](https://github.com/udacity/CarND-Extended
 ## Basic Build Instructions
 + Clone this repo and cd directory which include CMakeLists.txt
 + cmake .
-+ make (This will create ExtendedKF executable) 
++ make (This will create UnscentedKF executable) 
 
-## Running Extended Kalman Filter
-After launch the simulator, when executed ./ExtendedKF, output will be:
+## Running Unscented Kalman Filter
+After launch the simulator, when executed ./UnscentedKF, output will be:
 >     Listening to port 4567
 >     Connected!!!
 
@@ -37,8 +37,8 @@ After switch dataset2, the final RMSE:
 ## Accuracy
 You can see in the above image,the final RMSE is:
 
-dataset1 : RMSE of \[px,py,vx,vy\] is \[0.0946,0.0833,0.4499,0.4347\]
-dataset2 : RMSE of \[px,py,vx,vy\] is \[0.0756,0.0958,0.4591,0.4941\]
+dataset1 : RMSE of \[px,py,vx,vy\] is \[0.0662,0.0827,0.3326,0.2145\]
+dataset2 : RMSE of \[px,py,vx,vy\] is \[0.0830,0.0850,0.5149,0.5712\]
 
 ## Follows the Correct Algorithm
 ### Your Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
