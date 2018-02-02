@@ -383,10 +383,10 @@ void UKF::UKF_Update( MeasurementPackage meas_package, MatrixXd Zsig, VectorXd z
 	if ( meas_package.sensor_type_ == MeasurementPackage::RADAR )
 	{
 		NIS_radar_ = z_diff.transpose() * S.inverse() * z_diff;
-		cout << "NIS of radar:" << NIS_radar_ << endl;
+		cout << "NIS,radar," << NIS_radar_ << endl;
 	} else if ( meas_package.sensor_type_ == MeasurementPackage::LASER )
 	{
 		NIS_laser_ = z_diff.transpose() * S.inverse() * z_diff;
-		cout << "NIS of laser:" << NIS_laser_ << endl;
+		cout << "NIS,laser," << NIS_laser_ << endl;
 	}
 }
