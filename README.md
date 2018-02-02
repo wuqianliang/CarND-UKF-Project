@@ -33,6 +33,10 @@ After switch dataset2, the final RMSE:
 
 ![Alt text](https://github.com/wuqianliang/CarND-UKF-Project/blob/master/images/dataset2-RMSE.png "Optional title")
 
+NIS checking:
+From the following imags,we can see the estimations of uncertainty of noise are Appropriately.
+![NIS laser](https://github.com/wuqianliang/CarND-UKF-Project/blob/master/images/nis-laser.png "Optional title")
+![NIS radar](https://github.com/wuqianliang/CarND-UKF-Project/blob/master/images/nis-radar.png "Optional title")
 # Rubric points
 ## Accuracy
 You can see in the above image,the final RMSE is:
